@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails'
 gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
 
@@ -12,9 +13,11 @@ gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'sass-rails', '~> 5.0'
+
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
+gem 'rails-assets-normalize-css', source: 'https://rails-assets.org'
 
 group :development, :test do
   gem 'sqlite3'
