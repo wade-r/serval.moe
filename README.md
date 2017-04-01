@@ -12,6 +12,8 @@
 
 `SECRET_KEY_BASE`
 
+`GA_TRACK_ID`
+
 ### Puma
 
 `PORT`
