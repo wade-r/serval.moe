@@ -3,3 +3,19 @@
     h1= "#{@visitors_count} FRIENDs visited serval.moe, すごい !!!"
     h3 Image from kemofure.kadokawa.co.jp
     small ryan[dot]wade[at]protonmail[dot]com
+#button-chat
+  = image_tag 'icon-chat.svg', size: '24x24'
+  br
+  span#total-count= "#{@comments_count}"
+#chat-box
+  div#comments
+    p.text-danger Loading...
+  = form_for @comment, remote: true do |f|
+    #input-content-area
+      = f.text_area :content, id: 'input-content', autofocus: 'true', placeholder: 'Input your message'
+    #button-send
+      = image_tag 'icon-send.svg', size: '24x24'
+      br
+      | send
+  #button-close
+    = image_tag 'icon-close.svg', size: '16x16'

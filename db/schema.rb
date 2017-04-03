@@ -12,14 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20170401134348) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "comments", force: :cascade do |t|
-    t.string   "nickname",   default: "NO NAME", null: false
-    t.text     "content",                        null: false
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
+    t.string   "visitor_id", default: "0", null: false
+    t.text     "content",                  null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: "welcome#index"
 
-  resources :posts, only: [ :create ]
+  resources :comments, only: [ :create, :index ]
 end
