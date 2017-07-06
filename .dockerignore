@@ -1,0 +1,6 @@
+.git
+vendor/bundle/*
+db/*.sqlite*
+log/*
+tmp/*
+public/assets/*
